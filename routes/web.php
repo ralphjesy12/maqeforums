@@ -11,3 +11,9 @@
 |
 */
 Route::get('/', 'ForumController@index');
+Route::get('/forumjs', function(){
+    return view('forumjs');
+});
+
+Route::get('/posts', 'ForumController@getPosts');
+Route::get('/authors', 'ForumController@getAuthors');
